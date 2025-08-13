@@ -17,7 +17,9 @@ const Home = () => {
             exit="hidden"
             className="h2 mt-10"
           >
-            <span className=""> Camila</span> Monteiro
+            <span className=""> Nguyen Thanh Dat </span>
+            <br></br>
+            <span className="text-accent"> Landon </span>
           </motion.h2>
 
           <motion.p
@@ -56,7 +58,7 @@ const Home = () => {
 
         <ParticleContainer />
 
-        {/* avatar camis image */}
+        {/* avatar landon image */}
         <motion.div
           variants={fadeIn("up", 0.5)}
           initial="hidden"

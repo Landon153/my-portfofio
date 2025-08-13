@@ -7,11 +7,19 @@ import {
   RiYoutubeLine,
   RiWhatsappFill,
   RiTiktokLine,
+  RiFacebookBoxLine,
+  RiMediumLine
 } from "react-icons/ri";
 
 const Socials = () => {
   return (
     <div className=" flex items-center gap-x-5 text-lg">
+      <Link
+        href={"https://api.whatsapp.com/send/?phone=5511949230302"}
+        className=" hover:text-accent transition-all duration-300"
+      >
+        <RiFacebookBoxLine />
+      </Link>
       <Link
         href={"https://api.whatsapp.com/send/?phone=5511949230302"}
         className=" hover:text-accent transition-all duration-300"
@@ -47,6 +55,12 @@ const Socials = () => {
         className=" hover:text-accent transition-all duration-300"
       >
         <RiTiktokLine />
+      </Link>
+      <Link
+        href={"https://api.whatsapp.com/send/?phone=5511949230302"}
+        className=" hover:text-accent transition-all duration-300"
+      >
+        <RiMediumLine />
       </Link>
     </div>
   );

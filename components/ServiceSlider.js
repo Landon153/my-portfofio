@@ -53,6 +53,7 @@ const ServiceSlider = () => {
       }}
       modules={[FreeMode, Pagination]}
       className="h-[240px] sm:h-[340px]"
+      speed={200}
     >
       {serviceData.map((item, index) => {
         return (

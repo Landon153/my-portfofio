@@ -7,8 +7,8 @@ const Avatar = () => {
         //removed hidden
         className=" translate-z-0 w-full h-full"
         src={"/camis.png"}
-        width={737}
-        height={678}
+        width={500}
+        height={500}
         alt="image of a girl, in a black blouse , pony hair and smiling "
       />
     </div>

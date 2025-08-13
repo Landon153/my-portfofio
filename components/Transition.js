@@ -24,7 +24,7 @@ const Transition = () => {
         initial="initial"
         animate="animate"
         exit="exit"
-        transition={{ delay: 0.2, duration: 0.6, ease: "easeInOut" }}
+        transition={{ delay: 0.1, duration: 0.3, ease: "easeInOut" }}
       >
         
       </motion.div>
@@ -34,7 +34,7 @@ const Transition = () => {
         initial="initial"
         animate="animate"
         exit="exit"
-        transition={{ delay: 0.4, duration: 0.6, ease: "easeInOut" }}
+        transition={{ delay: 0.1, duration: 0.3, ease: "easeInOut" }}
       >
        
       </motion.div>
@@ -44,7 +44,7 @@ const Transition = () => {
         initial="initial"
         animate="animate"
         exit="exit"
-        transition={{ delay: 0.6, duration: 0.6, ease: "easeInOut" }}
+        transition={{ delay: 0.1, duration: 0.3, ease: "easeInOut" }}
       >
         
       </motion.div>
