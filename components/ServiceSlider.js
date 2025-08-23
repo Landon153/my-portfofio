@@ -11,7 +11,7 @@ import {
   RxArrowTopRight,
 } from "react-icons/rx";
 
-import { FreeMode, Pagination } from "swiper";
+import { FreeMode, Pagination } from "swiper/modules";
 import Link from "next/link";
 
 const serviceData = [

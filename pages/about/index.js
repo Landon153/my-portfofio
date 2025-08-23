@@ -41,6 +41,7 @@ const aboutData = [
       {
         title: "3D Printing services - NewSew 3D , Self-employment",
         stage: "Sep 2023 - Present ",
+        des: '- Providing 3D printing services for clients, including prototyping and custom designs.',
       },
       {
         title: " 3D modeling online classes  - NewSew 3D, Freelancer projects",
@@ -160,7 +161,7 @@ const About = () => {
         {/* text title  */}
         <div className="flex-1 flex flex-col justify-center">
           <motion.h2
-            variants={fadeIn("right", 0.2)}
+            variants={fadeIn("right", 0.1)}
             initial="hidden"
             animate="show"
             exit="hidden "
@@ -171,7 +172,7 @@ const About = () => {
           </motion.h2>
 
           <motion.p
-            variants={fadeIn("right", 0.4)}
+            variants={fadeIn("right", 0.2)}
             initial="hidden"
             animate="show"
             exit="hidden "
@@ -185,7 +186,7 @@ const About = () => {
 
           {/* counters */}
           <motion.div
-            variants={fadeIn("right", 0.6)}
+            variants={fadeIn("right", 0.3)}
             initial="hidden"
             animate="show"
             exit="hidden "
@@ -226,7 +227,7 @@ const About = () => {
 
         {/* info   - about   */}
         <motion.div
-          variants={fadeIn("left", 0.4)}
+          variants={fadeIn("left", 0.2)}
           initial="hidden"
           animate="show"
           exit="hidden "
@@ -240,9 +241,9 @@ const About = () => {
                   key={itemIndex}
                   className={`${
                     index === itemIndex &&
-                    "text-accent after:w-[100%] after:bg-accent after:transition-all after:duration-300 "
+                    "text-accent after:w-[100%] after:bg-accent after:transition-all after:duration-100 "
                   }
-                 cursor-pointer capitalize xl:text-lg relative after:w-8 after:h-[2px] after:bg-white after:absolute after:-bottom-1 after:left-0 `}
+                  cursor-pointer capitalize xl:text-lg relative after:w-8 after:h-[2px] after:bg-white after:absolute after:-bottom-1 after:left-0 `}
                   onClick={() => setIndex(itemIndex)}
                 >
                   {item.title}
@@ -258,14 +259,14 @@ const About = () => {
               return (
                 <div
                   key={itemIndex}
-                  className="flex-1 flex flex-col md:flex-row max-w-max gap-x-2 items-center text-white/60"
+                  className="flex-1 flex flex-col md:flex-col max-w-max gap-x-2  text-white/60"
                 >
-                  <div className="font-light mb-2 md:mb-0">{item.title}</div>
-                  <div className="hidden md:flex">-</div>
+                  <div className="font-light mb-2 md:mb-0">- {item.title}</div>
+                  <div className="hidden md:flex"></div>
                   <div className=""> {item.stage} </div>
                   <div className="flex gap-x-4">
                     {item.icons?.map((icon, itemIndex) => {
-                      return <div className="text-2xl ">{icon}</div>;
+                      return <div key={itemIndex} className="text-2xl ">{icon}</div>;
                     })}
                   </div>
                 </div>
